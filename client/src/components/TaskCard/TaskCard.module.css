@@ -1,0 +1,66 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #277bc0;
+  border-radius: 5px;
+  margin: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 500px;
+  height: fit-content; /* Adjust height to content */
+  box-sizing: border-box;
+  position: relative;
+  padding: 0; /* Remove padding from card */
+  overflow: hidden; /* Ensure image stays within borders */
+}
+
+.imageContainer {
+  width: 100%;
+  height: 300px; /* Fixed height for image */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.task-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1.5rem 0; /* Padding instead of margin */
+  text-align: center;
+  color: #277bc0;
+  width: 100%;
+  /* Removed absolute positioning */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #adadad;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 520px) {
+  .card {
+    width: 350px;
+  }
+  
+  .imageContainer {
+    height: 250px; /* Smaller image on mobile */
+  }
+  
+  .task-name {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+  }
+}

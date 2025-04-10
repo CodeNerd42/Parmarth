@@ -1,0 +1,413 @@
+:root {
+  --nav-height: 112px;
+}
+
+.parallax {
+  background-image: url("../../assets/img/background.png");
+  height: calc(100vh - var(--nav-height)) !important;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.parmarth {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 6rem;
+  flex-wrap: wrap;
+  max-width: 1366px;
+}
+
+.about {
+  width: 50%;
+  text-align: left;
+  margin: 0 1rem;
+}
+
+.children {
+  height: 450px;
+  margin: 0 1rem;
+  border-radius: 10px;
+}
+
+.gallery {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #277bc0;
+  margin-bottom: 2rem;
+}
+
+.hr {
+  width: 100px;
+  border: 8px dotted #277bc0;
+  border-bottom: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.carousel {
+  margin: auto;
+  padding: 0 10rem;
+  margin-top: 5rem;
+}
+
+.carousel-img {
+  height: 500px;
+}
+
+.works {
+  max-width: 1280px;
+  margin-top: 5rem;
+}
+
+.our-wings {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #277bc0;
+}
+
+.tasks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  max-width: 1366px;
+}
+
+.help {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  max-width: 1366px;
+}
+
+@media screen and (width< 1280px) {
+  .top-section {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  .about {
+    text-align: justify;
+    width: 80%;
+  }
+  .children {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (width< 1080px) {
+  .carousel {
+    padding: 3rem;
+  }
+  .carousel-img {
+    height: 300px;
+  }
+}
+
+@media screen and (width< 520px) {
+  .carousel {
+    padding: 1rem;
+  }
+  .carousel-img {
+    height: 250px;
+  }
+  .children {
+    width: 80%;
+    height: 250px;
+  }
+  .parallax > div {
+    max-width: 300px;
+  }
+  .our-wings {
+    width: 250px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .carousel-img {
+    height: 700px;
+  }
+}
+
+/* StatsCounter.module.css */
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  text-align: center;
+  width: 220px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.statNumber {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #277bc0;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.statTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.statDescription {
+  font-size: 1rem;
+  color: #555; /* Ensure good contrast */
+  line-height: 1.6;
+  width: 100%;
+}
+
+.descriptionLine {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+/* Ensure text is visible on all backgrounds */
+.statDescription p {
+  color: inherit;
+  margin: 0;
+  padding: 2px 0;
+}
+
+@media (max-width: 768px) {
+  .statItem {
+    width: 100%;
+    max-width: 280px;
+    padding: 25px 15px;
+  }
+  
+  .statDescription {
+    font-size: 0.95rem;
+  }
+}
+
+/* LandingPage.module.css */
+.statsSection {
+  background-color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.statsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+/* Help Section Styles */
+.helpSection {
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.statsSection {
+  background-color: #fff;
+  padding: 80px 20px 40px 20px;
+  text-align: center;
+}
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #277bc0;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.sectionDivider {
+  height: 3px;
+  width: 80px;
+  background: linear-gradient(90deg, #277bc0, transparent);
+  margin: 0 auto;
+}
+
+.carouselContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.carouselItem {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Help Card Styles */
+.help {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Carousel Dots */
+.carousel .control-dots {
+  bottom: -30px;
+}
+
+.carousel .control-dots .dot {
+  background: #cbd5e0;
+  box-shadow: none;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+}
+
+.carousel .control-dots .dot.selected {
+  background: #277bc0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .carouselItem {
+    padding: 0 10px;
+  }
+  
+  .carousel .control-dots {
+    bottom: -20px;
+  }
+  
+  .help {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.carousel {
+  margin-bottom: 50px;
+}
+
+.statNumber {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #277bc0;
+  margin-bottom: 10px;
+  line-height: 1;
+  transition: all 0.3s ease; /* Smooth transition for number changes */
+}
+.statsSection {
+  background-color: #fff;
+  padding: 80px 20px 40px 20px;
+  text-align: center;
+  margin: 60px 0; /* Add this line */
+}
+
+
+/* Add to your CSS file */
+.carousel {
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.carouselWrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.carouselImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.carousel .slide {
+  background: transparent;
+}
+
+.carousel .slider-wrapper {
+  border-radius: 16px;
+}
+
+.carousel .control-dots {
+  bottom: 15px;
+  padding: 0 20px;
+}
+
+.carousel .control-dots .dot {
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.carousel .control-dots .dot.selected {
+  background: #2a9be7;
+  width: 12px;
+  height: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel {
+    padding: 0 15px;
+  }
+  
+  .carouselImg {
+    border-radius: 12px;
+  }
+  
+  .carousel .control-dots {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    padding: 0 10px;
+  }
+  
+  .carouselImg {
+    border-radius: 8px;
+  }
+}

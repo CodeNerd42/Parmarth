@@ -1,0 +1,125 @@
+/* Base Styles */
+.body {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Section Styles */
+.section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.section h1 {
+  font-size: 2rem;
+  color: #277bc0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.section h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #277bc0;
+  margin: 1rem auto;
+}
+
+.section p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Image Styles */
+.sectionImage {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.fullWidthImage {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+/* Tool Cards */
+.toolCard {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+.toolCard.reverse {
+  flex-direction: row-reverse;
+}
+
+.toolContent {
+  flex: 1;
+}
+
+.toolCard h2 {
+  color: #2a9be7;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.toolCard img {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .body {
+    padding: 1rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .toolCard, 
+  .toolCard.reverse {
+    flex-direction: column;
+  }
+
+  .toolCard img {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .section h1 {
+    font-size: 1.5rem;
+  }
+
+  .toolCard h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 1rem;
+  }
+
+  .section h1 {
+    font-size: 1.3rem;
+  }
+}
