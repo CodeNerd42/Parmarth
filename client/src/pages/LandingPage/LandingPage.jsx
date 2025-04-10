@@ -146,7 +146,7 @@ const LandingPage = () => {
                   title="Give Donation"
                   description="Happiness doesn't result from what we get, but from what we give."
                   cardClass="donationCard"
-                  primaryBtnText="Donate Now"
+                  primaryBtnText="Donate"
                   primaryBtnClass="donationPrimaryBtn"
                   secondaryBtnText="Why Donate?"
                   secondaryBtnClass="donationSecondaryBtn"
