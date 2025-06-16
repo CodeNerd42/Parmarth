@@ -3,7 +3,7 @@
 A socially-driven web application designed and maintained by Parmarth — the official social welfare club of **IET Lucknow**. This platform reflects our mission to promote social awareness, drive change, and engage students in meaningful community service initiatives.
 
 ## 🔗 Live Site
-👉 [parmarth-drab.vercel.app](https://parmarth-drab.vercel.app)
+👉 https://parmarth.ietlucknow.ac.in/
 
 ---
 
